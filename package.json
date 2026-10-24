@@ -1,0 +1,8 @@
+{
+  "name": "gunluk",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "yeni": "node yeni.js"
+  }
+}
