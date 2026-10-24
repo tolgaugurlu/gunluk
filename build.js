@@ -108,7 +108,7 @@ function yazilariOku() {
     .sort()
     .reverse()
     .map(f => {
-      const ham = fs.readFileSync(path.join(GIRDI, f), 'utf8').replace(/\r\n/g, '\n').trim();
+      const ham = fs.readFileSync(path.join(GIRDI, f), 'utf8').replace(/^﻿/, '').replace(/\r\n/g, '\n').trim();
       const satirlar = ham.split('\n');
       let baslik = null;
       let govde = ham;
